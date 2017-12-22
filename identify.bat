@@ -11,8 +11,8 @@ if not x%str1:f=%==x%str1% (
 )
 
 GOTO local_server
-set NEW_PASSWD=ytm123!
-set ORACLE_INSTANCE=//ipaddress:1555/pdytm1
+set NEW_PASSWD=###
+set ORACLE_INSTANCE=//ipaddress:####/####
 
 :ytm_server
 set NEW_DB_USER=%str%
