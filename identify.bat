@@ -7,16 +7,16 @@ set NEW_DB_USER=%str1%
 set str=%str1:~0,4%
 
 if not x%str1:f=%==x%str1% (	 
-	GOTO ytm_server
+GOTO remote_server
 )
 
 GOTO local_server
 ::set NEW_PASSWD=new_passwd
 ::set ORACLE_INSTANCE=//ipaddress:port_number/service_name
 
-:ytm_server
+:remote_server
 set NEW_DB_USER=%str%
-echo "I'm in France"
+echo "I'm in remote server!"
 GOTO create_database
 
 :local_server
